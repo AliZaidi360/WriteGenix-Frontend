@@ -12,8 +12,7 @@ export default defineConfig({
     },
   },
 
-  // IMPORTANT: Fix Vercel static path resolution
-  base: "./",
+  base: "./",   // <-- THE FIX FOR VERCEL
 
   build: {
     outDir: "dist",
