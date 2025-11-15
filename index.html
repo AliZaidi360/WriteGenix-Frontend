@@ -1,21 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-    <meta name="description" content="WriteGenix - Professional ghostwriting, book publishing, and marketing services trusted by 500+ authors worldwide." />
-    <title>WriteGenix - Premium Ghostwriting & Publishing Services</title>
-    <link rel="icon" type="image/png" href="/favicon.png" />
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import path from "path";
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
-  </head>
+export default defineConfig({
+  plugins: [react()],
 
-  <body>
-    <div id="root"></div>
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "src"),
+      "@assets": path.resolve(__dirname, "public/assets"),
+    },
+  },
 
-    <!-- THIS IS THE PART YOU WERE MISSING -->
-    <script type="module" src="./src/main.tsx"></script>
-  </body>
-</html>
+  base: "./",   // <-- THE FIX FOR VERCEL
+
+  build: {
+    outDir: "dist",
+    emptyOutDir: true,
+  },
+
+  server: {
+    port: 5173,
+  },
+});
