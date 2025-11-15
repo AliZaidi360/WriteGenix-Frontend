@@ -12,6 +12,14 @@ export default defineConfig({
     },
   },
 
+  // IMPORTANT: Fix Vercel static path resolution
+  base: "./",
+
+  build: {
+    outDir: "dist",
+    emptyOutDir: true,
+  },
+
   server: {
     port: 5173,
   },
