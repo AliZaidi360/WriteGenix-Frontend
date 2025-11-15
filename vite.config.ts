@@ -12,7 +12,7 @@ export default defineConfig({
     },
   },
 
-  base: "./",   // <-- THE FIX FOR VERCEL
+  base: "/", // VERY IMPORTANT FOR VERCEL
 
   build: {
     outDir: "dist",
