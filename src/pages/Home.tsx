@@ -113,9 +113,9 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Book Services */}
-            <div className="mb-16">
-              <h3 className="text-2xl font-serif font-semibold mb-8 text-center">Book Services</h3>
+            {/* Book & Ebook Services */}
+            <div className="mb-16 pb-16 border-b">
+              <h3 className="text-2xl font-serif font-semibold mb-8 text-center">Book & Ebook Services</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {bookServices.map((service, index) => (
                   <ServiceCard key={index} {...service} />
