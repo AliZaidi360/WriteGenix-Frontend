@@ -13,7 +13,11 @@ import {
   BarChart3,
   Image,
   QrCode,
-  Bookmark
+  Bookmark,
+  Code,
+  Globe,
+  Monitor,
+  Megaphone
 } from 'lucide-react';
 
 export interface Service {
@@ -191,9 +195,40 @@ export const services: Service[] = [
     ]
   },
   {
+    slug: 'web-development',
+    icon: Code,
+    title: 'Web Development',
+    description: 'Custom websites and web applications built with modern technologies for businesses of all sizes.',
+    details: [
+      'Responsive web design',
+      'Modern frameworks (React, Next.js, Vue)',
+      'E-commerce integration',
+      'Content management systems',
+      'API development',
+      'Performance optimization'
+    ],
+    fullDescription: 'We build fast, modern, and scalable websites and web applications tailored to your business needs. From simple business websites to complex web applications, we use cutting-edge technologies to create digital experiences that drive results.',
+    benefits: [
+      'Professional, modern design',
+      'Mobile-responsive across all devices',
+      'Fast loading times and SEO optimized',
+      'Scalable architecture for growth',
+      'Easy content management',
+      'Ongoing support and maintenance'
+    ],
+    process: [
+      'Discovery call to understand your needs and goals',
+      'Design mockups and wireframes for approval',
+      'Development using modern frameworks and best practices',
+      'Testing across devices and browsers',
+      'Launch and deployment with training',
+      'Ongoing maintenance and updates'
+    ]
+  },
+  {
     slug: 'website-development',
-    icon: Rocket,
-    title: 'Website Development',
+    icon: Globe,
+    title: 'Author Website Development',
     description: 'Custom author websites to establish your online presence.',
     details: [
       'Professional design',
@@ -215,6 +250,37 @@ export const services: Service[] = [
       'Content integration and optimization',
       'Payment and email integration',
       'Launch and training'
+    ]
+  },
+  {
+    slug: 'digital-marketing',
+    icon: Megaphone,
+    title: 'Digital Marketing',
+    description: 'Comprehensive digital marketing strategies to grow your online presence and drive results.',
+    details: [
+      'SEO & search engine optimization',
+      'Social media marketing',
+      'Content marketing',
+      'Email marketing campaigns',
+      'Pay-per-click advertising',
+      'Analytics & reporting'
+    ],
+    fullDescription: 'Drive growth with data-driven digital marketing strategies. We help businesses and authors build their online presence, attract customers, and convert leads into sales through proven digital marketing techniques.',
+    benefits: [
+      'Increase online visibility and brand awareness',
+      'Drive qualified traffic to your website',
+      'Generate leads and conversions',
+      'Build engaged social media communities',
+      'Measurable ROI with detailed analytics',
+      'Expert strategy and execution'
+    ],
+    process: [
+      'Audit current digital presence and performance',
+      'Develop comprehensive marketing strategy',
+      'Implement SEO, social media, and content campaigns',
+      'Set up tracking and analytics',
+      'Monitor performance and optimize',
+      'Monthly reporting and strategy refinement'
     ]
   },
   {

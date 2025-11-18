@@ -17,7 +17,7 @@ export default function Hero() {
           Transform Your Story Into a Bestseller
         </h1>
         <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
-          Professional ghostwriting, publishing, and marketing services trusted by 500+ authors worldwide
+          Professional ghostwriting, publishing, web development, and digital marketing services trusted by 500+ clients worldwide
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">

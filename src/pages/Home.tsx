@@ -5,7 +5,7 @@ import TestimonialCard from '@/components/TestimonialCard';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
 import { Link } from 'wouter';
-import { PenTool, BookOpen, Rocket, Palette, ShoppingCart, TrendingUp } from 'lucide-react';
+import { PenTool, BookOpen, Rocket, Palette, ShoppingCart, TrendingUp, Code, Megaphone } from 'lucide-react';
 import femaleAuthor from '@assets/generated_images/Female_author_testimonial_photo_fcd9176f.png';
 import maleAuthor from '@assets/generated_images/Male_author_testimonial_photo_cf608095.png';
 
@@ -34,11 +34,33 @@ export default function Home() {
       ]
     },
     {
+      icon: Code,
+      title: 'Web Development',
+      description: 'Custom websites and web applications built with modern technologies for your business.',
+      features: [
+        'Responsive design',
+        'E-commerce integration',
+        'Performance optimized',
+        'Ongoing support'
+      ]
+    },
+    {
+      icon: Megaphone,
+      title: 'Digital Marketing',
+      description: 'Comprehensive digital marketing strategies to grow your online presence and drive results.',
+      features: [
+        'SEO optimization',
+        'Social media marketing',
+        'Content marketing',
+        'Analytics & reporting'
+      ]
+    },
+    {
       icon: Rocket,
-      title: 'Marketing',
+      title: 'Book Marketing',
       description: 'Comprehensive marketing strategies to ensure your book reaches its target audience.',
       features: [
-        'Website development',
+        'Author website development',
         'Social media management',
         'Press releases',
         'Video trailers'

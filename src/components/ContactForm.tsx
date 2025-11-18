@@ -92,9 +92,11 @@ export default function ContactForm() {
                       <SelectContent>
                         <SelectItem value="ghostwriting">Ghostwriting</SelectItem>
                         <SelectItem value="publishing">Publishing (Amazon/All Platforms)</SelectItem>
+                        <SelectItem value="web-development">Web Development</SelectItem>
+                        <SelectItem value="digital-marketing">Digital Marketing</SelectItem>
                         <SelectItem value="editing">Editing & Proofreading</SelectItem>
                         <SelectItem value="cover-design">Book Cover Design</SelectItem>
-                        <SelectItem value="marketing">Marketing Services</SelectItem>
+                        <SelectItem value="marketing">Book Marketing Services</SelectItem>
                         <SelectItem value="formatting">Formatting</SelectItem>
                         <SelectItem value="other">Other Services</SelectItem>
                       </SelectContent>
