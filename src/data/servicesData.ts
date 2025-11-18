@@ -29,6 +29,7 @@ export interface Service {
   fullDescription: string;
   benefits: string[];
   process: string[];
+  category: 'book' | 'digital';
 }
 
 export const services: Service[] = [
@@ -57,7 +58,8 @@ export const services: Service[] = [
       'Chapter-by-chapter writing with regular reviews',
       'Unlimited revisions until you\'re completely satisfied',
       'Final manuscript delivery in your preferred format'
-    ]
+    ],
+    category: 'book'
   },
   {
     slug: 'book-cover-design',
@@ -84,7 +86,8 @@ export const services: Service[] = [
       'Refine your chosen design with unlimited revisions',
       'Deliver final files in all required formats',
       'Provide source files for future updates'
-    ]
+    ],
+    category: 'book'
   },
   {
     slug: 'editing-proofreading',
@@ -111,7 +114,8 @@ export const services: Service[] = [
       'Line edit for style and flow',
       'Copy edit for grammar and consistency',
       'Final proofread before publication'
-    ]
+    ],
+    category: 'book'
   },
   {
     slug: 'formatting',
@@ -138,7 +142,8 @@ export const services: Service[] = [
       'Format manuscript for print and digital',
       'Review and revisions',
       'Deliver print-ready PDFs and eBook files'
-    ]
+    ],
+    category: 'book'
   },
   {
     slug: 'amazon-publishing',
@@ -165,7 +170,8 @@ export const services: Service[] = [
       'Write compelling book description',
       'Select optimal categories and keywords',
       'Configure pricing and distribution'
-    ]
+    ],
+    category: 'book'
   },
   {
     slug: 'multi-platform-publishing',
@@ -192,7 +198,8 @@ export const services: Service[] = [
       'Upload and configure listings',
       'Coordinate simultaneous launch',
       'Monitor and report on all platforms'
-    ]
+    ],
+    category: 'book'
   },
   {
     slug: 'web-development',
@@ -223,7 +230,8 @@ export const services: Service[] = [
       'Testing across devices and browsers',
       'Launch and deployment with training',
       'Ongoing maintenance and updates'
-    ]
+    ],
+    category: 'digital'
   },
   {
     slug: 'website-development',
@@ -250,7 +258,8 @@ export const services: Service[] = [
       'Content integration and optimization',
       'Payment and email integration',
       'Launch and training'
-    ]
+    ],
+    category: 'book'
   },
   {
     slug: 'digital-marketing',
@@ -281,7 +290,8 @@ export const services: Service[] = [
       'Set up tracking and analytics',
       'Monitor performance and optimize',
       'Monthly reporting and strategy refinement'
-    ]
+    ],
+    category: 'digital'
   },
   {
     slug: 'seo-digital-marketing',
@@ -308,7 +318,8 @@ export const services: Service[] = [
       'Create content strategy',
       'Implement tracking and analytics',
       'Monthly reporting and optimization'
-    ]
+    ],
+    category: 'book'
   },
   {
     slug: 'social-media-marketing',
@@ -335,7 +346,8 @@ export const services: Service[] = [
       'Custom content creation',
       'Scheduled posting and engagement',
       'Monthly analytics and reporting'
-    ]
+    ],
+    category: 'book'
   },
   {
     slug: 'video-trailer-production',
@@ -362,7 +374,8 @@ export const services: Service[] = [
       'Filming, animation, or stock footage',
       'Editing with music and voiceover',
       'Delivery in multiple formats'
-    ]
+    ],
+    category: 'book'
   },
   {
     slug: 'press-release',
@@ -389,7 +402,8 @@ export const services: Service[] = [
       'Distribute to relevant contacts',
       'Follow up with key contacts',
       'Provide media coverage report'
-    ]
+    ],
+    category: 'book'
   },
   {
     slug: 'bestseller-campaign',
@@ -416,7 +430,8 @@ export const services: Service[] = [
       'Coordinate launch day activities',
       'Drive concentrated sales',
       'Maintain momentum post-launch'
-    ]
+    ],
+    category: 'book'
   },
   {
     slug: 'a-plus-content',
@@ -443,7 +458,8 @@ export const services: Service[] = [
       'Write compelling copy',
       'Submit for Amazon approval',
       'Monitor performance metrics'
-    ]
+    ],
+    category: 'book'
   },
   {
     slug: 'amazon-optimization',
@@ -470,7 +486,8 @@ export const services: Service[] = [
       'Optimize title, subtitle, and description',
       'Select best categories',
       'Test and refine continuously'
-    ]
+    ],
+    category: 'book'
   },
   {
     slug: 'illustrations',
@@ -497,7 +514,8 @@ export const services: Service[] = [
       'Detailed illustration creation',
       'Review and revisions',
       'Final artwork delivery'
-    ]
+    ],
+    category: 'book'
   },
   {
     slug: 'qr-code-integration',
@@ -524,7 +542,8 @@ export const services: Service[] = [
       'Set up tracking',
       'Deliver print-ready files',
       'Provide analytics access'
-    ]
+    ],
+    category: 'book'
   },
   {
     slug: 'personalized-isbn',
@@ -551,10 +570,15 @@ export const services: Service[] = [
       'Register book information',
       'Generate barcodes',
       'Provide all documentation'
-    ]
+    ],
+    category: 'book'
   }
 ];
 
 export function getServiceBySlug(slug: string): Service | undefined {
   return services.find(service => service.slug === slug);
+}
+
+export function getServicesByCategory(category: 'book' | 'digital'): Service[] {
+  return services.filter(service => service.category === category);
 }

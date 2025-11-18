@@ -5,12 +5,12 @@ import TestimonialCard from '@/components/TestimonialCard';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
 import { Link } from 'wouter';
-import { PenTool, BookOpen, Rocket, Palette, ShoppingCart, TrendingUp, Code, Megaphone } from 'lucide-react';
+import { PenTool, BookOpen, Rocket, Palette, ShoppingCart, TrendingUp, Code, Megaphone, FileEdit } from 'lucide-react';
 import femaleAuthor from '@assets/generated_images/Female_author_testimonial_photo_fcd9176f.png';
 import maleAuthor from '@assets/generated_images/Male_author_testimonial_photo_cf608095.png';
 
 export default function Home() {
-  const services = [
+  const bookServices = [
     {
       icon: PenTool,
       title: 'Ghostwriting',
@@ -34,6 +34,31 @@ export default function Home() {
       ]
     },
     {
+      icon: Palette,
+      title: 'Book Cover Design',
+      description: 'Eye-catching, professional cover designs that capture your books essence.',
+      features: [
+        'Custom cover design',
+        'Multiple concepts',
+        'Print & digital formats',
+        'Unlimited revisions'
+      ]
+    },
+    {
+      icon: FileEdit,
+      title: 'Editing & Proofreading',
+      description: 'Meticulous editing and proofreading to ensure your manuscript is polished and professional.',
+      features: [
+        'Comprehensive editing',
+        'Grammar & style check',
+        'Formatting',
+        'Quality assurance'
+      ]
+    }
+  ];
+
+  const digitalServices = [
+    {
       icon: Code,
       title: 'Web Development',
       description: 'Custom websites and web applications built with modern technologies for your business.',
@@ -53,50 +78,6 @@ export default function Home() {
         'Social media marketing',
         'Content marketing',
         'Analytics & reporting'
-      ]
-    },
-    {
-      icon: Rocket,
-      title: 'Book Marketing',
-      description: 'Comprehensive marketing strategies to ensure your book reaches its target audience.',
-      features: [
-        'Author website development',
-        'Social media management',
-        'Press releases',
-        'Video trailers'
-      ]
-    },
-    {
-      icon: Palette,
-      title: 'Book Cover Design',
-      description: 'Eye-catching, professional cover designs that capture your books essence.',
-      features: [
-        'Custom cover design',
-        'Multiple concepts',
-        'Print & digital formats',
-        'Unlimited revisions'
-      ]
-    },
-    {
-      icon: BookOpen,
-      title: 'Editing & Proofreading',
-      description: 'Meticulous editing and proofreading to ensure your manuscript is polished and professional.',
-      features: [
-        'Comprehensive editing',
-        'Grammar & style check',
-        'Formatting',
-        'Quality assurance'
-      ]
-    },
-    {
-      icon: TrendingUp,
-      title: 'Amazon Optimization',
-      description: 'Maximize your books visibility and sales with expert Amazon optimization strategies.',
-      features: [
-        'A+ Content creation',
-        'Keyword optimization',
-        'Category selection',
-        'Bestseller strategies'
       ]
     }
   ];
@@ -128,14 +109,28 @@ export default function Home() {
             <div className="text-center mb-16">
               <h2 className="text-4xl font-serif font-bold mb-4">Our Services</h2>
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                Comprehensive publishing solutions tailored to bring your literary vision to life
+                Comprehensive book publishing and digital solutions tailored to bring your vision to life
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {services.map((service, index) => (
-                <ServiceCard key={index} {...service} />
-              ))}
+            {/* Book Services */}
+            <div className="mb-16">
+              <h3 className="text-2xl font-serif font-semibold mb-8 text-center">Book Services</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {bookServices.map((service, index) => (
+                  <ServiceCard key={index} {...service} />
+                ))}
+              </div>
+            </div>
+
+            {/* Digital Services */}
+            <div className="mb-8">
+              <h3 className="text-2xl font-serif font-semibold mb-8 text-center">Digital Services</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {digitalServices.map((service, index) => (
+                  <ServiceCard key={index} {...service} />
+                ))}
+              </div>
             </div>
 
             <div className="text-center mt-12">
