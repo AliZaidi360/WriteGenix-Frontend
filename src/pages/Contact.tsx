@@ -9,13 +9,13 @@ export default function Contact() {
     {
       icon: Mail,
       title: 'Email',
-      content: 'hello@writegenix.com',
+      content: 'writegenix@gmail.com',
       subContent: 'We respond within 24 hours'
     },
     {
       icon: Phone,
       title: 'Phone',
-      content: '+1 (555) 123-4567',
+      content: '+1 (949) 409-8389',
       subContent: 'Mon-Fri, 9AM-6PM EST'
     },
     {
