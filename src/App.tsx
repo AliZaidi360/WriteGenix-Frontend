@@ -3,6 +3,7 @@ import { queryClient } from "./lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
+import StripeProvider from "@/components/StripeProvider";
 import NotFound from "@/pages/not-found";
 import Home from "@/pages/Home";
 import Services from "@/pages/Services";
@@ -12,6 +13,7 @@ import Blog from "@/pages/Blog";
 import FAQ from "@/pages/FAQ";
 import Contact from "@/pages/Contact";
 import BlogPost from "@/pages/BlogPost";
+import PaymentSuccess from "@/pages/PaymentSuccess";
 
 function Router() {
   return (
@@ -24,6 +26,7 @@ function Router() {
       <Route path="/blog/:slug" component={BlogPost} />
       <Route path="/faq" component={FAQ} />
       <Route path="/contact" component={Contact} />
+      <Route path="/payment-success" component={PaymentSuccess} />
       <Route component={NotFound} />
     </Switch>
   );
@@ -32,10 +35,12 @@ function Router() {
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <TooltipProvider>
-        <Toaster />
-        <Router />
-      </TooltipProvider>
+      <StripeProvider>
+        <TooltipProvider>
+          <Toaster />
+          <Router />
+        </TooltipProvider>
+      </StripeProvider>
     </QueryClientProvider>
   );
 }
