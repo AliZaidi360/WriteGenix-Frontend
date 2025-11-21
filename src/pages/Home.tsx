@@ -6,6 +6,11 @@ import TestimonialCard from '@/components/TestimonialCard';
 import Footer from '@/components/Footer';
 import ChatWidget from '@/components/ChatWidget';
 import DiscountBanner from '@/components/DiscountBanner';
+import ValueProposition from '@/components/ValueProposition';
+import ServiceList from '@/components/ServiceList';
+import BookWritersSection from '@/components/BookWritersSection';
+import TrustBadges from '@/components/TrustBadges';
+import QuickActionSections from '@/components/QuickActionSections';
 import { Button } from '@/components/ui/button';
 import { Link } from 'wouter';
 import { PenTool, BookOpen, Rocket, Palette, ShoppingCart, TrendingUp, Code, Megaphone, FileEdit } from 'lucide-react';
@@ -108,6 +113,10 @@ export default function Home() {
       
       <main className="flex-1 relative">
         <Hero />
+        
+        <TrustBadges />
+
+        <BookWritersSection />
 
         <section className="py-20 bg-background">
           <div className="container mx-auto px-6">
@@ -147,6 +156,12 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        <ServiceList />
+
+        <QuickActionSections />
+
+        <ValueProposition />
 
         <section className="py-20 bg-card">
           <div className="container mx-auto px-6">

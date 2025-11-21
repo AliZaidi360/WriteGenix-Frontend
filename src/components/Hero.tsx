@@ -25,7 +25,16 @@ export default function Hero() {
             </div>
           </div>
           
-          <p className="text-lg text-muted-foreground mb-8 max-w-xl leading-relaxed">
+          <div className="mb-6">
+            <h2 className="text-2xl md:text-3xl font-bold text-primary mb-3">
+              PUBLISH YOUR BOOK & KEEP 100% PROFITS & RIGHTS
+            </h2>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              Professional ghostwriting & publication help is just a few clicks away!
+            </p>
+          </div>
+          
+          <p className="text-base text-muted-foreground mb-8 max-w-xl leading-relaxed">
             Get rid of the troubles and tediousness of writing your own book. Let us ghostwrite your book and you take the credit for it.
           </p>
           
