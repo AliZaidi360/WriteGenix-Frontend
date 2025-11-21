@@ -1,8 +1,11 @@
 import Header from '@/components/Header';
+import TopBar from '@/components/TopBar';
 import Hero from '@/components/Hero';
 import ServiceCard from '@/components/ServiceCard';
 import TestimonialCard from '@/components/TestimonialCard';
 import Footer from '@/components/Footer';
+import ChatWidget from '@/components/ChatWidget';
+import DiscountBanner from '@/components/DiscountBanner';
 import { Button } from '@/components/ui/button';
 import { Link } from 'wouter';
 import { PenTool, BookOpen, Rocket, Palette, ShoppingCart, TrendingUp, Code, Megaphone, FileEdit } from 'lucide-react';
@@ -99,7 +102,9 @@ export default function Home() {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <TopBar />
       <Header />
+      <DiscountBanner />
       
       <main className="flex-1">
         <Hero />
@@ -176,6 +181,7 @@ export default function Home() {
       </main>
 
       <Footer />
+      <ChatWidget />
     </div>
   );
 }
