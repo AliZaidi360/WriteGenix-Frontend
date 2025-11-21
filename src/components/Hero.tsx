@@ -5,9 +5,9 @@ import { BookOpen } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[85vh] flex items-center overflow-hidden bg-gradient-to-br from-blue-50 via-teal-50 to-orange-50">
+    <section className="relative min-h-[85vh] flex items-center overflow-hidden bg-gradient-to-br from-blue-50 via-teal-50 to-orange-50 pt-20">
       {/* Split Layout */}
-      <div className="container mx-auto px-6 py-12 grid lg:grid-cols-2 gap-8 items-center">
+      <div className="container mx-auto px-6 py-16 grid lg:grid-cols-2 gap-12 items-center">
         {/* Left Side - Text Content */}
         <div className="relative z-10">
           <div className="mb-6">
@@ -18,10 +18,10 @@ export default function Hero() {
               <br />
               <span className="text-primary">GHOSTWRITING</span>
             </h1>
-            <div className="text-3xl md:text-4xl font-bold text-primary mt-4">
-              <p className="mb-2">**You Conceive**</p>
-              <p className="mb-2">**We Construct**</p>
-              <p>**Your Book**</p>
+            <div className="text-2xl md:text-3xl font-bold text-primary mt-6 space-y-1">
+              <p className="text-accent">**You Conceive**</p>
+              <p className="text-primary">**We Construct**</p>
+              <p className="text-accent">**Your Book**</p>
             </div>
           </div>
           
@@ -32,22 +32,22 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row gap-4 mb-8">
             <Button 
               size="lg" 
-              className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8 py-6" 
+              className="bg-primary hover:bg-primary/90 text-primary-foreground text-base md:text-lg px-6 md:px-8 py-5 md:py-6" 
               data-testid="button-start-journey" 
               asChild
             >
               <Link href="/contact">
                 LET'S GET STARTED
-                <ArrowRight className="ml-2 h-5 w-5" />
+                <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5" />
               </Link>
             </Button>
             <Button
               size="lg"
               variant="outline"
-              className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground text-lg px-8 py-6"
+              className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground text-base md:text-lg px-6 md:px-8 py-5 md:py-6"
               data-testid="button-live-chat"
             >
-              <MessageCircle className="mr-2 h-5 w-5" />
+              <MessageCircle className="mr-2 h-4 w-4 md:h-5 md:w-5" />
               LIVE CHAT
             </Button>
           </div>
@@ -82,20 +82,20 @@ export default function Hero() {
       </div>
 
       {/* Stats Bar */}
-      <div className="absolute bottom-0 left-0 right-0 bg-primary/10 backdrop-blur-sm border-t border-border">
+      <div className="absolute bottom-0 left-0 right-0 bg-background/80 backdrop-blur-sm border-t border-border">
         <div className="container mx-auto px-6 py-4">
-          <div className="flex flex-wrap justify-center gap-8 text-foreground">
+          <div className="flex flex-wrap justify-center gap-6 md:gap-8 text-foreground">
             <div className="flex items-center gap-2">
-              <CheckCircle className="h-5 w-5 text-accent" />
-              <span className="text-sm font-medium">500+ Books Published</span>
+              <CheckCircle className="h-4 w-4 md:h-5 md:w-5 text-accent" />
+              <span className="text-xs md:text-sm font-medium">500+ Books Published</span>
             </div>
             <div className="flex items-center gap-2">
-              <CheckCircle className="h-5 w-5 text-accent" />
-              <span className="text-sm font-medium">95% Client Satisfaction</span>
+              <CheckCircle className="h-4 w-4 md:h-5 md:w-5 text-accent" />
+              <span className="text-xs md:text-sm font-medium">95% Client Satisfaction</span>
             </div>
             <div className="flex items-center gap-2">
-              <CheckCircle className="h-5 w-5 text-accent" />
-              <span className="text-sm font-medium">100% Rights & Profits Yours</span>
+              <CheckCircle className="h-4 w-4 md:h-5 md:w-5 text-accent" />
+              <span className="text-xs md:text-sm font-medium">100% Rights & Profits Yours</span>
             </div>
           </div>
         </div>

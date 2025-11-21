@@ -106,7 +106,7 @@ export default function Home() {
       <Header />
       <DiscountBanner />
       
-      <main className="flex-1">
+      <main className="flex-1 relative">
         <Hero />
 
         <section className="py-20 bg-background">

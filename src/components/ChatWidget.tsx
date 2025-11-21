@@ -29,7 +29,7 @@ export default function ChatWidget() {
 
       {/* Chat Widget Popup */}
       {isOpen && (
-        <Card className="fixed bottom-24 right-6 z-50 w-80 shadow-2xl animate-in slide-in-from-bottom-5">
+        <Card className="fixed bottom-24 right-6 z-50 w-80 max-w-[calc(100vw-3rem)] shadow-2xl animate-in slide-in-from-bottom-5">
           <div className="p-4 bg-primary text-primary-foreground rounded-t-lg flex items-center justify-between">
             <div className="flex items-center gap-2">
               <span className="text-2xl">👋</span>
