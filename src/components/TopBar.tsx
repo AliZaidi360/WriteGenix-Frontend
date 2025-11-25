@@ -4,7 +4,7 @@ import { Link } from 'wouter';
 
 export default function TopBar() {
   return (
-    <div className="bg-primary text-primary-foreground py-2 text-xs md:text-sm">
+    <div className="fixed top-0 left-0 right-0 z-50 bg-primary text-primary-foreground py-2 text-xs md:text-sm">
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between flex-wrap gap-2">
         <div className="flex items-center gap-3 md:gap-6 flex-wrap">
           <a href="tel:+15551234567" className="flex items-center gap-1.5 hover:opacity-80 whitespace-nowrap">

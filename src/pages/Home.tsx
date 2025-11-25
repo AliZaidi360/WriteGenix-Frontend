@@ -109,7 +109,7 @@ export default function Home() {
       <TopBar />
       <Header />
       
-      <main className="flex-1 relative">
+      <main className="flex-1 relative pt-[113px]">
         <Hero />
         
         <TrustBadges />
