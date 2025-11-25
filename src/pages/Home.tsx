@@ -5,7 +5,6 @@ import ServiceCard from '@/components/ServiceCard';
 import TestimonialCard from '@/components/TestimonialCard';
 import Footer from '@/components/Footer';
 import ChatWidget from '@/components/ChatWidget';
-import DiscountBanner from '@/components/DiscountBanner';
 import ValueProposition from '@/components/ValueProposition';
 import ServiceList from '@/components/ServiceList';
 import BookWritersSection from '@/components/BookWritersSection';
@@ -109,7 +108,6 @@ export default function Home() {
     <div className="min-h-screen flex flex-col">
       <TopBar />
       <Header />
-      <DiscountBanner />
       
       <main className="flex-1 relative">
         <Hero />
