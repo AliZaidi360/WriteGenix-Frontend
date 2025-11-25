@@ -63,15 +63,15 @@ export default function Services() {
             </div>
 
             {/* Book Services Section */}
-            <div className="mb-20 pb-20 border-b">
+            <div className="mb-20">
               <div className="flex items-center gap-4 mb-12">
                 <div className="rounded-full bg-primary/10 p-3">
                   <BookOpen className="h-8 w-8 text-primary" />
                 </div>
-                <h2 className="text-4xl font-serif font-bold">Book & Ebook Services</h2>
+                <h2 className="text-4xl font-serif font-bold">Book Services</h2>
               </div>
               <p className="text-lg text-muted-foreground mb-8 max-w-3xl">
-                Complete publishing solutions from manuscript to bestseller - ghostwriting, editing, cover design, and distribution
+                Complete publishing solutions from manuscript to bestseller
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {bookServices.map(renderServiceCard)}
@@ -87,7 +87,7 @@ export default function Services() {
                 <h2 className="text-4xl font-serif font-bold">Digital Services</h2>
               </div>
               <p className="text-lg text-muted-foreground mb-8 max-w-3xl">
-                Modern web development and digital marketing solutions for your business - websites, SEO, and online growth
+                Modern web development and digital marketing solutions for your business
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {digitalServices.map(renderServiceCard)}
