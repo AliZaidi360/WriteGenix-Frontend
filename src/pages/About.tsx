@@ -43,7 +43,7 @@ export default function About() {
         <section className="py-20 bg-card">
           <div className="container mx-auto px-6">
             <div className="text-center mb-16">
-              <h1 className="text-5xl font-serif font-bold mb-6">About WriteGenix</h1>
+              <h1 className="text-5xl font-serif font-bold mb-6">About WriteGenix Solutions</h1>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
                 Transforming aspiring authors into published success stories
               </p>
@@ -53,7 +53,7 @@ export default function About() {
               <div>
                 <img 
                   src={aboutImage} 
-                  alt="WriteGenix workspace" 
+                  alt="WriteGenix Solutions workspace" 
                   className="rounded-lg shadow-lg w-full"
                 />
               </div>
@@ -62,13 +62,13 @@ export default function About() {
                 <h2 className="text-4xl font-serif font-bold mb-6">Our Story</h2>
                 <div className="space-y-4 text-muted-foreground leading-relaxed">
                   <p>
-                    Founded over a decade ago, WriteGenix emerged from a simple belief: every story deserves to be told with excellence. What started as a small team of passionate writers has grown into a comprehensive publishing powerhouse.
+                    Founded over a decade ago, WriteGenix Solutions emerged from a simple belief: every story deserves to be told with excellence. What started as a small team of passionate writers has grown into a comprehensive publishing powerhouse.
                   </p>
                   <p>
                     We've helped over 500 authors bring their visions to life, from first-time writers to established professionals. Our holistic approach covers every aspect of the publishing journey—from initial manuscript development to marketing and distribution.
                   </p>
                   <p>
-                    Today, WriteGenix stands as a trusted partner for authors worldwide, combining traditional publishing expertise with modern digital marketing strategies to ensure your book reaches its full potential.
+                    Today, WriteGenix Solutions stands as a trusted partner for authors worldwide, combining traditional publishing expertise with modern digital marketing strategies to ensure your book reaches its full potential.
                   </p>
                 </div>
 

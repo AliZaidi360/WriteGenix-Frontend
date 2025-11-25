@@ -30,7 +30,7 @@ export default function Header() {
         <div className="flex items-center justify-between">
           <Link href="/" data-testid="link-home">
             <div className="flex items-center gap-2 hover-elevate active-elevate-2 px-2 py-1 rounded-md cursor-pointer">
-              <h1 className="text-2xl font-serif font-bold text-foreground">WriteGenix</h1>
+              <h1 className="text-2xl font-serif font-bold text-foreground">WriteGenix Solutions</h1>
             </div>
           </Link>
 

@@ -31,7 +31,7 @@ export default function ValueProposition() {
     {
       icon: CheckCircle2,
       title: 'Exclusive Membership',
-      description: 'Get featured on WriteGenix Publications Website'
+      description: 'Get featured on WriteGenix Solutions Publications Website'
     }
   ];
 
@@ -43,7 +43,7 @@ export default function ValueProposition() {
             The Privileges of Becoming a Published Author
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            When you work with WriteGenix, you gain more than just a book - you gain a complete publishing advantage
+            When you work with WriteGenix Solutions, you gain more than just a book - you gain a complete publishing advantage
           </p>
         </div>
 

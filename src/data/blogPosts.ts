@@ -180,7 +180,7 @@ Many successful authors use different publishing paths for different books. You 
 
 There's no single "right" answer. We've helped authors succeed with all three paths. The key is choosing the one that aligns with your specific situation, goals, and resources.
 
-At WriteGenix, we support authors through whichever path they choose, from ghostwriting and editing to full publishing and marketing services across all models.
+At WriteGenix Solutions, we support authors through whichever path they choose, from ghostwriting and editing to full publishing and marketing services across all models.
 
 Want to discuss which publishing path makes sense for your book? Schedule a free consultation with our team.
     `
@@ -329,7 +329,7 @@ Book marketing is not a sprint. The authors who succeed treat their book like a 
 
 ## Need Help?
 
-Marketing can be overwhelming, especially while writing your next book. At WriteGenix, we offer comprehensive marketing services from social media management to paid advertising campaigns. Let us handle the marketing while you focus on writing.
+Marketing can be overwhelming, especially while writing your next book. At WriteGenix Solutions, we offer comprehensive marketing services from social media management to paid advertising campaigns. Let us handle the marketing while you focus on writing.
 
 Contact us to learn about our marketing packages tailored for authors at every stage.
     `
@@ -487,7 +487,7 @@ While staying current with trends helps, avoid being too trendy. Your cover need
 
 Your book cover is not the place to cut corners. It's often the first—and sometimes only—impression potential readers will have of your work. A professional, genre-appropriate cover that captures your book's essence is worth every penny.
 
-At WriteGenix, our design team creates covers that not only look beautiful but sell books. We understand genre conventions, market trends, and what makes readers click "Buy Now."
+At WriteGenix Solutions, our design team creates covers that not only look beautiful but sell books. We understand genre conventions, market trends, and what makes readers click "Buy Now."
 
 Ready to create a cover that captures your book's essence and attracts your ideal readers? Contact us for a free cover design consultation.
     `
@@ -735,7 +735,7 @@ KDP provides unprecedented access to readers worldwide at zero upfront cost. Suc
 
 Many authors earn substantial income through KDP, but it requires treating your book like a business product.
 
-At WriteGenix, we handle the entire KDP publishing process—from manuscript preparation and formatting to cover design, keyword research, and launch strategy. Focus on writing; we'll handle publishing.
+At WriteGenix Solutions, we handle the entire KDP publishing process—from manuscript preparation and formatting to cover design, keyword research, and launch strategy. Focus on writing; we'll handle publishing.
 
 Ready to publish on Amazon? Contact us for a free KDP publishing consultation.
     `
@@ -980,7 +980,7 @@ Start today. Start small. Start with one platform and one call to action. Your f
 
 ## We Can Help
 
-Building a platform while writing a book is challenging. At WriteGenix, we offer platform building services including:
+Building a platform while writing a book is challenging. At WriteGenix Solutions, we offer platform building services including:
 - Website design and setup
 - Social media management
 - Content creation

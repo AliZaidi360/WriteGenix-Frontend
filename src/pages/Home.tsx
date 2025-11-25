@@ -91,13 +91,13 @@ export default function Home() {
 
   const testimonials = [
     {
-      quote: 'Working with WriteGenix was transformative. They took my rough ideas and helped me craft a compelling narrative that resonated with readers. The editing process was thorough, collaborative, and respectful of my voice. Within six months of publication, my book hit bestseller status in its category.',
+      quote: 'Working with WriteGenix Solutions was transformative. They took my rough ideas and helped me craft a compelling narrative that resonated with readers. The editing process was thorough, collaborative, and respectful of my voice. Within six months of publication, my book hit bestseller status in its category.',
       author: 'Dr. Jennifer Martinez',
       role: 'Author & Psychologist',
       bookTitle: 'Breaking the Silence: A Journey Through Trauma and Healing'
     },
     {
-      quote: 'I had been sitting on my business insights for years, unsure how to present them. WriteGenix not only helped structure my knowledge into a coherent book but also handled the entire publishing and marketing process. The professionalism and attention to detail were outstanding.',
+      quote: 'I had been sitting on my business insights for years, unsure how to present them. WriteGenix Solutions not only helped structure my knowledge into a coherent book but also handled the entire publishing and marketing process. The professionalism and attention to detail were outstanding.',
       author: 'David Chen',
       role: 'Entrepreneur & Business Consultant',
       bookTitle: 'Scaling Smart: Sustainable Growth Strategies for Modern Businesses'
@@ -182,7 +182,7 @@ export default function Home() {
           <div className="container mx-auto px-6 text-center">
             <h2 className="text-4xl font-serif font-bold mb-6">Ready to Start Your Publishing Journey?</h2>
             <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">
-              Join hundreds of successful authors who have transformed their stories into bestsellers with WriteGenix
+              Join hundreds of successful authors who have transformed their stories into bestsellers with WriteGenix Solutions
             </p>
             <Button size="lg" variant="secondary" data-testid="button-get-free-consultation" asChild>
               <Link href="/contact">
