@@ -68,7 +68,7 @@ export default function Services() {
                 <div className="rounded-full bg-primary/10 p-3">
                   <BookOpen className="h-8 w-8 text-primary" />
                 </div>
-                <h2 className="text-4xl font-serif font-bold">Book Services</h2>
+                <h2 className="text-4xl font-serif font-bold">Book & Ebook Services</h2>
               </div>
               <p className="text-lg text-muted-foreground mb-8 max-w-3xl">
                 Complete publishing solutions from manuscript to bestseller

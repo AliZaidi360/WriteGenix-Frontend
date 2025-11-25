@@ -1,110 +1,75 @@
 import { Link } from 'wouter';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, CheckCircle, MessageCircle } from 'lucide-react';
-import { BookOpen } from 'lucide-react';
+import { ArrowRight, CheckCircle } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[85vh] flex items-center overflow-hidden bg-gradient-to-br from-blue-50 via-teal-50 to-orange-50 pt-20">
-      {/* Split Layout */}
-      <div className="container mx-auto px-6 py-16 grid lg:grid-cols-2 gap-12 items-center">
-        {/* Left Side - Text Content */}
-        <div className="relative z-10">
-          <div className="mb-6">
-            <h1 className="text-5xl md:text-7xl font-serif font-bold text-primary mb-4 leading-tight" data-testid="text-hero-title">
-              MANIFEST YOUR
-              <br />
-              <span className="text-accent">CONCEPT THROUGH</span>
-              <br />
-              <span className="text-primary">GHOSTWRITING</span>
-            </h1>
-            <div className="text-2xl md:text-3xl font-bold text-primary mt-6 space-y-1">
-              <p className="text-accent">**You Conceive**</p>
-              <p className="text-primary">**We Construct**</p>
-              <p className="text-accent">**Your Book**</p>
-            </div>
-          </div>
+    <section className="relative min-h-[85vh] flex items-center overflow-hidden pt-20">
+      {/* Background Image with Overlay */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: `url(/assets/generated_images/Hero_background_literary_scene_617a9711.png)`,
+        }}
+      >
+        <div className="absolute inset-0 bg-black/40 backdrop-blur-sm"></div>
+      </div>
+
+      {/* Content */}
+      <div className="container mx-auto px-6 py-16 relative z-10">
+        <div className="max-w-4xl mx-auto text-center">
+          {/* Main Heading */}
+          <h1 
+            className="text-5xl md:text-7xl font-serif font-bold text-white mb-6 leading-tight" 
+            data-testid="text-hero-title"
+          >
+            Transform Your Story Into a Bestseller
+          </h1>
           
-          <div className="mb-6">
-            <h2 className="text-2xl md:text-3xl font-bold text-primary mb-3">
-              PUBLISH YOUR BOOK & KEEP 100% PROFITS & RIGHTS
-            </h2>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              Professional ghostwriting & publication help is just a few clicks away!
-            </p>
-          </div>
-          
-          <p className="text-base text-muted-foreground mb-8 max-w-xl leading-relaxed">
-            Get rid of the troubles and tediousness of writing your own book. Let us ghostwrite your book and you take the credit for it.
+          {/* Subheading */}
+          <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+            Professional ghostwriting, publishing, web development, and digital marketing services trusted by 500+ clients worldwide.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 mb-8">
+          {/* Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <Button 
               size="lg" 
-              className="bg-primary hover:bg-primary/90 text-primary-foreground text-base md:text-lg px-6 md:px-8 py-5 md:py-6" 
+              className="bg-accent hover:bg-accent/90 text-white text-base md:text-lg px-8 py-6" 
               data-testid="button-start-journey" 
               asChild
             >
               <Link href="/contact">
-                LET'S GET STARTED
-                <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5" />
+                Start Your Book Journey
+                <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
             <Button
               size="lg"
               variant="outline"
-              className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground text-base md:text-lg px-6 md:px-8 py-5 md:py-6"
-              data-testid="button-live-chat"
+              className="bg-gray-800/80 border-gray-700 text-white hover:bg-gray-700 text-base md:text-lg px-8 py-6"
+              data-testid="button-explore-services"
+              asChild
             >
-              <MessageCircle className="mr-2 h-4 w-4 md:h-5 md:w-5" />
-              LIVE CHAT
+              <Link href="/services">
+                Explore Our Services
+              </Link>
             </Button>
           </div>
 
-          <div className="bg-card/80 backdrop-blur-sm p-4 rounded-lg border border-border">
-            <p className="text-sm text-muted-foreground italic">
-              "The rights and profits to your ghostwritten books are 100% your entitlement and property."
-            </p>
-          </div>
-        </div>
-
-        {/* Right Side - Visual Elements */}
-        <div className="relative hidden lg:block">
-          <div className="relative bg-gradient-to-br from-amber-100 to-orange-100 rounded-2xl p-8 shadow-2xl">
-            {/* Book Stack Visual */}
-            <div className="relative">
-              <div className="absolute -top-4 -right-4 bg-primary/10 rounded-lg p-4 transform rotate-6">
-                <BookOpen className="h-16 w-16 text-primary" />
-              </div>
-              <div className="bg-white rounded-lg shadow-xl p-6 mt-12">
-                <div className="text-center mb-4">
-                  <p className="text-xs text-muted-foreground mb-2">WRITTEN BY YOU</p>
-                  <h3 className="text-xl font-bold text-primary">Your Book Title</h3>
-                </div>
-                <div className="bg-gradient-to-br from-blue-400 to-purple-500 h-48 rounded flex items-center justify-center">
-                  <BookOpen className="h-20 w-20 text-white/50" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Stats Bar */}
-      <div className="absolute bottom-0 left-0 right-0 bg-background/80 backdrop-blur-sm border-t border-border">
-        <div className="container mx-auto px-6 py-4">
-          <div className="flex flex-wrap justify-center gap-6 md:gap-8 text-foreground">
+          {/* Stats */}
+          <div className="flex flex-wrap justify-center gap-6 md:gap-8 text-white">
             <div className="flex items-center gap-2">
-              <CheckCircle className="h-4 w-4 md:h-5 md:w-5 text-accent" />
-              <span className="text-xs md:text-sm font-medium">500+ Books Published</span>
+              <CheckCircle className="h-5 w-5 text-accent" />
+              <span className="text-sm md:text-base font-medium">500+ Books Published</span>
             </div>
             <div className="flex items-center gap-2">
-              <CheckCircle className="h-4 w-4 md:h-5 md:w-5 text-accent" />
-              <span className="text-xs md:text-sm font-medium">95% Client Satisfaction</span>
+              <CheckCircle className="h-5 w-5 text-accent" />
+              <span className="text-sm md:text-base font-medium">95% Client Satisfaction</span>
             </div>
             <div className="flex items-center gap-2">
-              <CheckCircle className="h-4 w-4 md:h-5 md:w-5 text-accent" />
-              <span className="text-xs md:text-sm font-medium">100% Rights & Profits Yours</span>
+              <CheckCircle className="h-5 w-5 text-accent" />
+              <span className="text-sm md:text-base font-medium">10+ Years Experience</span>
             </div>
           </div>
         </div>
